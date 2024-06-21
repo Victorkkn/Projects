@@ -1,8 +1,7 @@
 * {
   margin: 0;
   border: 0;
-  box-sizing: border-box;
-  width: 0%;
+
   margin: auto;
 }
 
@@ -13,6 +12,18 @@
 
 body {
   font-family: var(--font-roboto);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+header,
+main,
+footer {
+  /* outros estilos aqui */
+  width: 100%; /* ajuste a largura conforme necessário */
 }
 
 .app {
@@ -25,5 +36,29 @@ h1 {
   letter-spacing: 0.9px;
   background: linear-gradient(90deg, rgba(249, 211, 180, 1) 0%);
   background-clip: text;
-  -webkit-background-clip: text;
+}
+
+header {
+  height: 20vh; /* 20% da altura da tela */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  height: 60vh; /* 60% da altura da tela */
+  justify-content: center;
+  /* outros estilos do main */
+}
+
+footer {
+  height: 20vh; /* 20% da altura da tela */
+  justify-content: center;
+  /* outros estilos do footer */
+}
+
+.times {
+  display: flex;
+  justify-content: space-between;
 }

@@ -10,8 +10,8 @@ function App() {
     <>
       <div>
         <Header />
-        <main className="flex-grow">
-          <div className="flex-grow">
+        <main>
+          <div>
             <button> - </button>
           </div>
         </main>
