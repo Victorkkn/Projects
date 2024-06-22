@@ -51,6 +51,10 @@ function Play() {
       {numeroAleatorio && (
         <p>Escolha do Computador: {ComputerChoice(numeroAleatorio)}</p>
       )}
+      <p>
+        {" "}
+        Resultado: {Results(selecionado, ComputerChoice(numeroAleatorio))}{" "}
+      </p>
     </div>
   );
 }
@@ -58,22 +62,22 @@ function Play() {
 function ComputerChoice(choice) {
   switch (choice) {
     case 1:
-      return <div>✊</div>;
+      return "✊";
     case 2:
-      return <div>✋</div>;
+      return "✋";
     case 3:
-      return <div>✌️</div>;
+      return "✌️";
   }
 }
 
 function Results(playerChoice, computerChoice) {
-  if (playerChoice == computerChoice) {
+  if (playerChoice === computerChoice) {
     return <div>Empate! </div>;
   }
   if (
-    (playerChoice == "✊" && computerChoice == "✌️") ||
-    (playerChoice == "✋" && computerChoice == "✊") ||
-    (playerChoice == "✌️" && computerChoice == "✋")
+    (playerChoice === "✊" && computerChoice === "✌️") ||
+    (playerChoice === "✋" && computerChoice === "✊") ||
+    (playerChoice === "✌️" && computerChoice === "✋")
   ) {
     return <div>Vitória! </div>;
   } else {
