@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Play from "../components/Play";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Header />
         <main>
           <div>
-            <button> - </button>
+            <Play />
           </div>
         </main>
         <Footer />

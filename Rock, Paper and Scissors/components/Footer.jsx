@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import "../src/App.css";
+import Modal from "./Modal";
 
 function Footer() {
   const [aberto, setAberto] = useState(false);
@@ -14,7 +15,12 @@ function Footer() {
       {" "}
       <div>
         <button onClick={handleClick}>{aberto ? "Fechar" : "Abrir"}</button>
-        {aberto && <div>Este é o texto dentro da caixa.</div>}
+        {aberto && (
+          <div>
+            {" "}
+            <Modal />
+          </div>
+        )}
       </div>
     </footer>
   );
