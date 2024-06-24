@@ -14,7 +14,9 @@ function Footer() {
     <footer>
       {" "}
       <div>
-        <button onClick={handleClick}>{aberto ? "Fechar" : "Abrir"}</button>
+        <button onClick={handleClick}>
+          {aberto ? "Fechar Regras" : "Abrir Regras"}
+        </button>
         {aberto && (
           <div>
             {" "}

@@ -17,34 +17,67 @@ function Play() {
   return (
     <div>
       <form>
-        <label>
+        <label
+          style={{
+            display: "inline-block",
+            width: "50px",
+            height: "50px",
+            border: "1px solid black",
+            padding: "10px",
+            margin: "10px",
+            alignItems: "center",
+          }}
+        >
           <input
             type="radio"
             value="✊"
             checked={selecionado === "✊"}
+            style={{ display: "none" }}
             onChange={handleChange}
           />
-          Mão fechada: ✊
+          <span style={{ fontSize: "20px", textAlign: "center" }}>✊</span>
         </label>
         <br />
-        <label>
+        <label
+          style={{
+            display: "inline-block",
+            width: "50px",
+            height: "50px",
+            border: "1px solid black",
+            padding: "10px",
+            margin: "10px",
+            alignItems: "center",
+          }}
+        >
           <input
             type="radio"
             value="✋"
             checked={selecionado === "✋"}
+            style={{ display: "none" }}
             onChange={handleChange}
           />
-          Cinco dedos abertos: ✋
+          <span style={{ fontSize: "20px", textAlign: "center" }}>✋</span>
         </label>
         <br />
-        <label>
+        <label
+          style={{
+            display: "inline-block",
+            width: "50px",
+            height: "50px",
+            border: "1px solid black",
+            padding: "10px",
+            margin: "10px",
+            alignItems: "center",
+          }}
+        >
           <input
             type="radio"
             value="✌️"
             checked={selecionado === "✌️"}
+            style={{ display: "none" }}
             onChange={handleChange}
           />
-          Dois dedos (como um "V"): ✌️
+          <span style={{ fontSize: "20px", textAlign: "center" }}>✌️</span>
         </label>
       </form>
       <p>Sua Escolha: {selecionado}</p>
